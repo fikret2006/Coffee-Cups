@@ -20,12 +20,7 @@
     font-weight: 100;
     src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
   }
-body{
-	font: 300 20px/1.3 'Lato', Arial, sans-serif;
-	background: #F9DB7D;
-	margin: 0;
-	padding-top: 50px;
-}
+
 
 * {
     margin: 0;
@@ -122,3 +117,108 @@ body {
 	font-weight: 100;
 }
 
+.card_link {
+    text-decoration: none;
+}
+
+@media(max-width:1000px){
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #FCDE7E;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 450px;
+        height: 600px;
+        background-color: white;
+        border-radius: 5px;
+        margin-left: 100px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card:hover {
+        transform: scale(1.1); 
+        transition: 1s;
+    }
+    
+    .card_cost {
+        font-size: 70px;
+        font-family: Miso;
+        font-weight: 700;
+        padding-top: 30px;
+        padding-right: 15px;
+        padding-bottom: 40px;
+        color: green;
+    }
+    
+    .smoke {
+        transform: scale(1.1);
+        margin-right: 20px;
+    }
+    
+    .cup_bean_bronze {
+        width: 160px;
+        height: 90px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        background-image:url(images/cup-bronze.png);
+        background-size: cover;
+    }
+    
+    .cup_bean_silver {
+        width: 160px;
+        height: 90px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        background-image:url(images/cup-silver.png);
+        background-size: cover;
+    }
+    
+    .cup_bean_gold {
+        width: 160px;
+        height: 90px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        background-image:url(images/cup-gold.png);
+        background-size: cover;
+    }
+    
+    .bean {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    
+    .card_name {
+        font-family: Miso;
+        color: #333333;
+        font-size: 56px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        margin-right: 20px;
+    }
+    
+    .card_text {
+        width: 52%;
+        text-align: center;
+        font-family: Lato;
+        color: #474747;
+        font-size: 30px;
+        font-weight: 100;
+    }
+    
+    .card_link {
+        text-decoration: none;
+    }
+}
