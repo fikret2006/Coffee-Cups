@@ -1,228 +1,171 @@
 @font-face {
-    font-family: 'miso';
-    src: url('fonts/miso-bold-webfont.woff') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-
+  font-family: "miso";
+  src: url("fonts/miso-bold-webfont.woff") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'miso';
-    src: url('fonts/miso-regular-webfont.woff') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "miso";
+  src: url("fonts/miso-regular-webfont.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 100;
-    src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
-  }
-
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXjeu.woff2)
+    format("woff2");
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #FCDE7E;
-    display: flex;
-    justify-content: center;
-    padding-right: 100px;
+  background-color: #fcde7e;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-    width: 450px;
-    height: 600px;
-    background-color: white;
-    border-radius: 5px;
-    margin-right: 75px;
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 450px;
+  height: 600px;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 75px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:first-child {
+  margin-left: 75px;
 }
 
 .card:hover {
-    transform: scale(1.1); 
-    transition: 1s;
+  transform: scale(1.1);
+  box-shadow: rgba(13, 13, 13, 0.2) 0px 2px 35px 14px;
+  transition: all 1s ease 0s;
 }
 
 .card_cost {
-    font-size: 70px;
-    font-family: Miso;
-    font-weight: 700;
-    padding-top: 30px;
-    padding-right: 15px;
-    padding-bottom: 40px;
-    color: green;
+  font-size: 70px;
+  font-family: Miso;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  color: green;
 }
 
 .smoke {
-    transform: scale(1.1);
-    margin-right: 20px;
+  transform: scale(1.1);
+  margin-right: 20px;
 }
 
 .cup_bean_bronze {
-    width: 160px;
-    height: 90px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    background-image:url(images/cup-bronze.png);
-    background-size: cover;
+  width: 160px;
+  height: 90px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-image: url(images/cup-bronze.png);
+  background-size: cover;
 }
 
 .cup_bean_silver {
-    width: 160px;
-    height: 90px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    background-image:url(images/cup-silver.png);
-    background-size: cover;
+  width: 160px;
+  height: 90px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-image: url(images/cup-silver.png);
+  background-size: cover;
 }
 
 .cup_bean_gold {
-    width: 160px;
-    height: 90px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    background-image:url(images/cup-gold.png);
-    background-size: cover;
+  width: 160px;
+  height: 90px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-image: url(images/cup-gold.png);
+  background-size: cover;
 }
 
 .bean {
-    margin-top: 20px;
-    margin-left: 50px;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 .card_name {
-	font-family: Miso;
-	color: #333333;
-	font-size: 56px;
-	font-weight: 400;
-    margin-bottom: 30px;
-    margin-right: 20px;
+  font-family: Miso;
+  color: #333333;
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-right: 20px;
 }
 
 .card_text {
-	width: 52%;
-	text-align: center;
-	font-family: Lato;
-	color: #474747;
-	font-size: 30px;
-	font-weight: 100;
+  width: 52%;
+  text-align: center;
+  font-family: Lato;
+  color: #474747;
+  font-size: 30px;
+  font-weight: 100;
 }
 
 .card_link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-@media(max-width:1080px){
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        background-color: #FCDE7E;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .card {
-        width: 450px;
-        height: 600px;
-        background-color: white;
-        border-radius: 5px;
-        margin-right: 75px;
-        margin-top: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card:last-child {
-        margin-bottom: 50px;
-    }
-    
-    .card:hover {
-        transform: scale(1.1); 
-        transition: 1s;
-    }
-    
-    .card_cost {
-        font-size: 70px;
-        font-family: Miso;
-        font-weight: 700;
-        padding-top: 30px;
-        padding-right: 15px;
-        padding-bottom: 40px;
-        color: green;
-    }
-    
-    .smoke {
-        transform: scale(1.1);
-        margin-right: 20px;
-    }
-    
-    .cup_bean_bronze {
-        width: 160px;
-        height: 90px;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        background-image:url(images/cup-bronze.png);
-        background-size: cover;
-    }
-    
-    .cup_bean_silver {
-        width: 160px;
-        height: 90px;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        background-image:url(images/cup-silver.png);
-        background-size: cover;
-    }
-    
-    .cup_bean_gold {
-        width: 160px;
-        height: 90px;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        background-image:url(images/cup-gold.png);
-        background-size: cover;
-    }
-    
-    .bean {
-        margin-top: 20px;
-        margin-left: 50px;
-    }
-    
-    .card_name {
-        font-family: Miso;
-        color: #333333;
-        font-size: 56px;
-        font-weight: 400;
-        margin-bottom: 30px;
-        margin-right: 20px;
-    }
-    
-    .card_text {
-        width: 52%;
-        text-align: center;
-        font-family: Lato;
-        color: #474747;
-        font-size: 30px;
-        font-weight: 100;
-    }
-    
-    .card_link {
-        text-decoration: none;
-    }
+@media (max-width: 375px) {
+  body {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .card {
+      width: 300px;
+      height: 500px;
+      padding: 0;
+      margin-bottom: 50px;
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+  .card:first-child {
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  .cup_bean_bronze {
+    padding-top: 0px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .cup_bean_silver {
+    padding-top: 0px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .cup_bean_gold {
+    padding-top: 0px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .bean {
+    margin-bottom: 11px;
+    margin-left: 50px;
+    transform: scale(1.1);
+  }
+  .card_name {
+      margin-bottom: 10px ;
+      margin-right: 15px;
+  }
+  .card_text {
+      width: 80%;
+  }
 }
